@@ -166,6 +166,7 @@ img{max-width:100%;display:block;}
 section{padding:100px 32px;}
 .section-head{max-width:var(--max); margin:0 auto 52px;}
 .section-head h2{font-size:clamp(1.7rem,3vw,2.4rem); max-width:640px; margin-top:12px;}
+.section-sub{margin-top:14px; font-size:14.5px; max-width:560px;}
 
 /* Services */
 .service-grid{
@@ -198,7 +199,7 @@ section{padding:100px 32px;}
 .industry-card p{margin-top:10px; font-size:13.5px;}
 
 /* Work */
-.work-grid{max-width:var(--max); margin:0 auto; display:grid; grid-template-columns:repeat(2,1fr); gap:24px;}
+.work-grid{max-width:var(--max); margin:0 auto; display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
 .work-card{border:1px solid var(--line); padding:28px 24px; background:var(--panel-2);}
 .work-tag{font-family:var(--font-mono); font-size:11px; letter-spacing:.06em; color:var(--amber);}
 .work-card h3{font-size:1.08rem; margin-top:14px;}
@@ -246,4 +247,97 @@ section{padding:100px 32px;}
   .service-grid{grid-template-columns:1fr;}
   .industry-grid{grid-template-columns:1fr;}
   .schematic-caption span:nth-child(2), .schematic-caption span:nth-child(3){opacity:.6;}
+}
+
+/* ===== Tabs (Capability Explorer) ===== */
+.tabs{
+  max-width:var(--max); margin:0 auto 0; display:flex; flex-wrap:wrap; gap:8px;
+  border-bottom:1px solid var(--line); padding-bottom:0;
+}
+.tab-btn{
+  background:none; border:1px solid var(--line); border-bottom:none;
+  color:var(--text-dim); font-family:var(--font-mono); font-size:12.5px;
+  padding:12px 18px; cursor:pointer; transition:all .2s;
+}
+.tab-btn:hover{color:var(--text);}
+.tab-btn.active{color:var(--ink); background:var(--blueprint); border-color:var(--blueprint);}
+.tab-panels{max-width:var(--max); margin:0 auto; border:1px solid var(--line); border-top:none; padding:36px;}
+.tab-panel{display:none;}
+.tab-panel.active{display:block; animation:fadeIn .35s ease;}
+@keyframes fadeIn{from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);}}
+.panel-intro{font-size:15px; margin-bottom:20px; max-width:640px;}
+.chip-row{display:flex; flex-wrap:wrap; gap:10px;}
+.chip{
+  font-family:var(--font-mono); font-size:12px; color:var(--text);
+  border:1px solid var(--line); padding:7px 14px; background:var(--panel);
+}
+
+/* ===== AI Agent flip cards ===== */
+.agents{background:var(--panel); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+.agent-grid{
+  max-width:var(--max); margin:0 auto; display:grid;
+  grid-template-columns:repeat(4,1fr); gap:20px;
+}
+.agent-card{
+  position:relative; height:220px; perspective:1200px; cursor:pointer;
+}
+.agent-face, .agent-back{
+  position:absolute; inset:0; backface-visibility:hidden;
+  border:1px solid var(--line); padding:22px; background:var(--ink);
+  transition:transform .5s ease;
+}
+.agent-face{transform:rotateY(0deg); display:flex; flex-direction:column;}
+.agent-back{
+  transform:rotateY(180deg); background:var(--panel-2); overflow-y:auto;
+}
+.agent-card.flipped .agent-face{transform:rotateY(-180deg);}
+.agent-card.flipped .agent-back{transform:rotateY(0deg);}
+.agent-tag{font-family:var(--font-mono); font-size:10.5px; color:var(--amber); letter-spacing:.05em;}
+.agent-face h3{font-size:1rem; margin-top:12px;}
+.agent-face p{font-size:13px; margin-top:10px;}
+.agent-flip-hint{
+  margin-top:auto; font-family:var(--font-mono); font-size:10.5px; color:var(--blueprint);
+}
+.agent-back h4{
+  font-family:var(--font-mono); font-size:10.5px; letter-spacing:.06em;
+  color:var(--blueprint); margin:0 0 8px; text-transform:uppercase;
+}
+.agent-back ul{margin:0 0 14px; padding-left:16px;}
+.agent-back li{font-size:12.5px; color:var(--text-dim); margin-bottom:4px;}
+.agent-back p{font-size:12px; color:var(--text-faint);}
+
+/* ===== Training ===== */
+.training-grid{
+  max-width:var(--max); margin:0 auto; display:grid;
+  grid-template-columns:repeat(4,1fr); gap:24px;
+}
+.training-card{border:1px solid var(--line); padding:26px 22px; background:var(--panel-2);}
+.training-card h3{font-size:1.02rem; color:var(--blueprint);}
+.training-card p{margin-top:10px; font-size:13.5px;}
+
+/* ===== Work filter buttons ===== */
+.filter-row{
+  max-width:var(--max); margin:0 auto 32px; display:flex; flex-wrap:wrap; gap:10px;
+}
+.filter-btn{
+  background:none; border:1px solid var(--line); color:var(--text-dim);
+  font-family:var(--font-mono); font-size:12px; padding:9px 16px; cursor:pointer;
+  transition:all .2s;
+}
+.filter-btn:hover{color:var(--text);}
+.filter-btn.active{background:var(--blueprint); color:var(--ink); border-color:var(--blueprint);}
+.work-card{display:block; transition:opacity .3s ease, transform .3s ease;}
+.work-card.hidden{display:none;}
+
+/* ===== Responsive additions ===== */
+@media (max-width: 900px){
+  .agent-grid{grid-template-columns:repeat(2,1fr);}
+  .training-grid{grid-template-columns:repeat(2,1fr);}
+  .tab-btn{font-size:11.5px; padding:10px 14px;}
+  .tab-panels{padding:26px 20px;}
+}
+@media (max-width: 560px){
+  .agent-grid{grid-template-columns:1fr;}
+  .training-grid{grid-template-columns:1fr;}
+  .agent-card{height:200px;}
 }
