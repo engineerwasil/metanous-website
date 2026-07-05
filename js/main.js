@@ -83,3 +83,47 @@ window.addEventListener('scroll', () => {
     nav.style.borderBottomColor = '';
   }
 });
+
+// ===== Capability Explorer tabs =====
+const tabBtns = document.querySelectorAll('.tab-btn');
+const tabPanels = document.querySelectorAll('.tab-panel');
+tabBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = btn.getAttribute('data-tab');
+    tabBtns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
+    tabPanels.forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    btn.setAttribute('aria-selected', 'true');
+    document.querySelector(`.tab-panel[data-panel="${target}"]`).classList.add('active');
+  });
+});
+
+// ===== AI Agent flip cards =====
+document.querySelectorAll('.agent-card').forEach(card => {
+  const toggle = () => card.classList.toggle('flipped');
+  card.addEventListener('click', toggle);
+  card.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+  });
+});
+
+// ===== Work filter buttons =====
+const filterBtns = document.querySelectorAll('.filter-btn');
+const workCards = document.querySelectorAll('.work-card');
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const filter = btn.getAttribute('data-filter');
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    workCards.forEach(card => {
+      const match = filter === 'all' || card.getAttribute('data-category') === filter;
+      card.classList.toggle('hidden', !match);
+    });
+  });
+});
+
+// Reveal newly added sections too
+document.querySelectorAll('.agent-card, .training-card, .tab-panels').forEach(el => {
+  el.classList.add('reveal');
+  io.observe(el);
+});
