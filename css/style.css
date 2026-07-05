@@ -129,6 +129,22 @@ img{max-width:100%;display:block;}
 .s-node-cloud rect{stroke:var(--amber);}
 @keyframes pop{to{opacity:1; transform:scale(1);}}
 
+.s-label{
+  font-family:var(--font-mono); font-size:13px; letter-spacing:.06em;
+  fill:var(--text); text-anchor:middle;
+  opacity:0; animation:fadeText .4s ease forwards;
+}
+.s-sublabel{
+  font-family:var(--font-mono); font-size:10px;
+  fill:var(--text-faint); text-anchor:middle;
+  opacity:0; animation:fadeText .4s ease forwards;
+}
+.s-node:nth-of-type(1) .s-label, .s-node:nth-of-type(1) .s-sublabel{animation-delay:.3s;}
+.s-node:nth-of-type(2) .s-label, .s-node:nth-of-type(2) .s-sublabel{animation-delay:.8s;}
+.s-node:nth-of-type(3) .s-label, .s-node:nth-of-type(3) .s-sublabel{animation-delay:1.3s;}
+.s-node:nth-of-type(4) .s-label, .s-node:nth-of-type(4) .s-sublabel{animation-delay:1.8s;}
+@keyframes fadeText{to{opacity:1;}}
+
 .schematic-caption{
   display:flex; justify-content:space-between; margin-top:14px;
   font-family:var(--font-mono); font-size:11px; letter-spacing:.1em;
@@ -154,7 +170,7 @@ section{padding:100px 32px;}
 /* Services */
 .service-grid{
   max-width:var(--max); margin:0 auto; display:grid;
-  grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line);
+  grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line);
   border:1px solid var(--line);
 }
 .service-card{background:var(--ink); padding:32px 26px; transition:background .2s;}
@@ -176,13 +192,13 @@ section{padding:100px 32px;}
 .approach-body p{margin-top:10px; max-width:600px;}
 
 /* Industries */
-.industry-grid{max-width:var(--max); margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:24px;}
+.industry-grid{max-width:var(--max); margin:0 auto; display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
 .industry-card{border:1px solid var(--line); padding:26px 22px;}
 .industry-card h3{font-size:1.02rem; color:var(--blueprint);}
 .industry-card p{margin-top:10px; font-size:13.5px;}
 
 /* Work */
-.work-grid{max-width:var(--max); margin:0 auto; display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+.work-grid{max-width:var(--max); margin:0 auto; display:grid; grid-template-columns:repeat(2,1fr); gap:24px;}
 .work-card{border:1px solid var(--line); padding:28px 24px; background:var(--panel-2);}
 .work-tag{font-family:var(--font-mono); font-size:11px; letter-spacing:.06em; color:var(--amber);}
 .work-card h3{font-size:1.08rem; margin-top:14px;}
