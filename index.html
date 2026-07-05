@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Metanous — Cloud, AI &amp; Enterprise Solutions Architecture</title>
-<meta name="description" content="Metanous designs and delivers cloud architecture, AI automation, cybersecurity, and modern workplace solutions for enterprises across healthcare, banking, government, aviation, and logistics.">
+<meta name="description" content="Metanous designs and delivers cloud architecture, AI agent solutions, cybersecurity, modern workplace transformation, and technical training for enterprises across healthcare, banking, government, aviation, and logistics.">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -21,8 +21,9 @@
       <span class="brand-name">METANOUS</span>
     </a>
     <nav class="nav-links">
-      <a href="#services">Services</a>
-      <a href="#approach">Approach</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#agents">AI Agents</a>
+      <a href="#training">Training</a>
       <a href="#industries">Industries</a>
       <a href="#work">Work</a>
       <a href="#contact" class="nav-cta">Start a project</a>
@@ -45,9 +46,10 @@
         from legacy to <span class="ink">cloud-native</span>.
       </h1>
       <p class="hero-sub">
-        Metanous is an independent consultancy for cloud architecture, AI automation,
-        cybersecurity, and modern workplace transformation — with 16+ years of enterprise
-        delivery across healthcare, banking, government, aviation, and logistics.
+        Metanous is an independent consultancy for cloud architecture, AI agents,
+        cybersecurity, modern workplace transformation, and technical training —
+        16+ years of enterprise delivery across healthcare, banking, government,
+        aviation, and logistics.
       </p>
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary">Start a project</a>
@@ -58,16 +60,11 @@
     <!-- Signature element: self-drawing migration schematic -->
     <div class="schematic-wrap" id="schematic">
       <svg class="schematic" viewBox="0 0 1000 260" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-        <!-- grid dots -->
         <g class="schematic-dots"></g>
-
-        <!-- connecting lines -->
         <path class="s-line" d="M110,130 L280,130" />
         <path class="s-line" d="M360,130 L530,130" />
         <path class="s-line" d="M610,130 L780,130" />
         <path class="s-line" d="M860,130 L930,130" />
-
-        <!-- nodes -->
         <g class="s-node">
           <rect x="40" y="95" width="140" height="70" rx="4"/>
           <text x="110" y="126" class="s-label">ASSESS</text>
@@ -107,8 +104,8 @@
         <span class="stat-label">Regions served — USA, UK, Middle East, Pakistan</span>
       </div>
       <div class="stat">
-        <span class="stat-num" data-count="3">0</span>
-        <span class="stat-label">Expert certifications — Azure Solutions Architect, GCP Cloud Architect, MCT</span>
+        <span class="stat-num" data-count="15">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">Microsoft certifications, incl. Azure Solutions Architect &amp; MCT</span>
       </div>
       <div class="stat">
         <span class="stat-num" data-count="100">0</span><span class="stat-suffix">%</span>
@@ -117,38 +114,73 @@
     </div>
   </section>
 
-  <!-- SERVICES -->
-  <section class="services" id="services">
+  <!-- CAPABILITY EXPLORER (interactive tabs) -->
+  <section class="services" id="capabilities">
     <div class="section-head">
       <p class="eyebrow">What we do</p>
-      <h2>Five disciplines, one accountable architect.</h2>
+      <h2>Six disciplines, one accountable architect.</h2>
+      <p class="section-sub">Click a discipline to see the tools and platforms behind it.</p>
     </div>
-    <div class="service-grid">
-      <article class="service-card">
-        <span class="service-index">01</span>
-        <h3>AI &amp; Intelligent Automation</h3>
-        <p>Generative AI and agentic systems, RAG-based knowledge assistants, Copilot Studio solutions, and document/workflow automation that cuts real operational cost.</p>
-      </article>
-      <article class="service-card">
-        <span class="service-index">02</span>
-        <h3>Cloud Architecture &amp; Migration</h3>
-        <p>Azure landing zones, hybrid cloud design, data center modernization, disaster recovery, and cost-optimized, high-availability architectures.</p>
-      </article>
-      <article class="service-card">
-        <span class="service-index">03</span>
-        <h3>Cybersecurity &amp; Governance</h3>
-        <p>Zero Trust architecture, identity &amp; access management, security hardening, Microsoft Defender, and compliance-ready governance frameworks.</p>
-      </article>
-      <article class="service-card">
-        <span class="service-index">04</span>
-        <h3>Microsoft Cloud &amp; Modern Workplace</h3>
-        <p>Microsoft 365 architecture, tenant-to-tenant and Exchange Online migrations, Entra ID modernization, and SharePoint/Teams solutions.</p>
-      </article>
-      <article class="service-card">
-        <span class="service-index">05</span>
-        <h3>Solution Architecture &amp; Consulting</h3>
-        <p>Discovery workshops, technical due diligence, proof-of-concept builds, RFP/RFQ support, and fractional CTO advisory from idea to implementation.</p>
-      </article>
+
+    <div class="tabs" role="tablist">
+      <button class="tab-btn active" data-tab="cloud" role="tab" aria-selected="true">Cloud &amp; Infrastructure</button>
+      <button class="tab-btn" data-tab="security" role="tab" aria-selected="false">Identity &amp; Security</button>
+      <button class="tab-btn" data-tab="ai" role="tab" aria-selected="false">AI &amp; Automation</button>
+      <button class="tab-btn" data-tab="workplace" role="tab" aria-selected="false">Modern Workplace</button>
+      <button class="tab-btn" data-tab="training" role="tab" aria-selected="false">Training &amp; Enablement</button>
+      <button class="tab-btn" data-tab="consulting" role="tab" aria-selected="false">Solution Architecture</button>
+    </div>
+
+    <div class="tab-panels">
+      <div class="tab-panel active" data-panel="cloud">
+        <p class="panel-intro">Azure landing zones, hybrid infrastructure, and disaster recovery built on the Cloud Adoption Framework.</p>
+        <div class="chip-row">
+          <span class="chip">Azure Landing Zones</span><span class="chip">Azure Migrate</span><span class="chip">Azure Site Recovery</span>
+          <span class="chip">Hub-Spoke Networking</span><span class="chip">ExpressRoute</span><span class="chip">Azure Firewall &amp; WAF</span>
+          <span class="chip">Azure Virtual Desktop</span><span class="chip">Terraform / Bicep / ARM</span><span class="chip">Veeam &amp; Azure Backup</span>
+          <span class="chip">Hyper-V / VMware</span><span class="chip">Azure SQL &amp; Managed Instance</span><span class="chip">FinOps &amp; Cost Optimization</span>
+        </div>
+      </div>
+      <div class="tab-panel" data-panel="security">
+        <p class="panel-intro">Zero Trust identity, threat protection, and governance mapped to compliance requirements.</p>
+        <div class="chip-row">
+          <span class="chip">Entra ID / Azure AD</span><span class="chip">Zero Trust Architecture</span><span class="chip">Microsoft Defender Suite</span>
+          <span class="chip">Azure Sentinel</span><span class="chip">Microsoft Purview</span><span class="chip">Azure Key Vault</span>
+          <span class="chip">PKI &amp; Certificate Services</span><span class="chip">Conditional Access &amp; MFA</span><span class="chip">Information Protection</span>
+        </div>
+      </div>
+      <div class="tab-panel" data-panel="ai">
+        <p class="panel-intro">Generative AI, agentic systems, and low-code automation built on the Microsoft AI stack.</p>
+        <div class="chip-row">
+          <span class="chip">Azure OpenAI</span><span class="chip">Azure AI Foundry</span><span class="chip">Copilot Studio</span>
+          <span class="chip">Azure AI Search / RAG</span><span class="chip">Document Intelligence (OCR)</span><span class="chip">Power Apps</span>
+          <span class="chip">Power Automate</span><span class="chip">Power BI</span><span class="chip">Dataverse</span>
+          <span class="chip">Prompt Engineering</span><span class="chip">Sentiment &amp; Topic Analysis</span><span class="chip">AI Avatars &amp; Chatbots</span>
+        </div>
+      </div>
+      <div class="tab-panel" data-panel="workplace">
+        <p class="panel-intro">Microsoft 365 architecture and endpoint management for distributed, multi-tenant organizations.</p>
+        <div class="chip-row">
+          <span class="chip">Microsoft 365 Architecture</span><span class="chip">Exchange Online Migration</span><span class="chip">Tenant-to-Tenant Migration</span>
+          <span class="chip">Teams &amp; SharePoint</span><span class="chip">Microsoft Intune</span><span class="chip">Endpoint Manager / SCCM</span>
+          <span class="chip">OneDrive for Business</span><span class="chip">Microsoft Graph</span>
+        </div>
+      </div>
+      <div class="tab-panel" data-panel="training">
+        <p class="panel-intro">Microsoft Certified Trainer-led programs, delivered on-site and online, worldwide since 2011.</p>
+        <div class="chip-row">
+          <span class="chip">Azure Administration</span><span class="chip">Azure Architecture &amp; Design</span><span class="chip">Microsoft 365 Fundamentals</span>
+          <span class="chip">Identity &amp; Security</span><span class="chip">AI &amp; Copilot Enablement</span><span class="chip">Custom Corporate Workshops</span>
+          <span class="chip">ITIL Foundation</span>
+        </div>
+      </div>
+      <div class="tab-panel" data-panel="consulting">
+        <p class="panel-intro">Strategic guidance from discovery to delivery, and fractional architecture leadership.</p>
+        <div class="chip-row">
+          <span class="chip">Discovery Workshops</span><span class="chip">HLD / LLD Documentation</span><span class="chip">Proof of Concept Builds</span>
+          <span class="chip">RFP / RFQ Response Support</span><span class="chip">Technical Due Diligence</span><span class="chip">Fractional CTO Advisory</span>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -190,6 +222,165 @@
     </div>
   </section>
 
+  <!-- AI AGENT SOLUTIONS (flip cards) -->
+  <section class="agents" id="agents">
+    <div class="section-head">
+      <p class="eyebrow">AI agent solutions</p>
+      <h2>Agents designed for a specific job, not a demo.</h2>
+      <p class="section-sub">Click a card to see the capabilities and the platform behind it.</p>
+    </div>
+    <div class="agent-grid">
+
+      <div class="agent-card" tabindex="0">
+        <div class="agent-face">
+          <span class="agent-tag">Education</span>
+          <h3>Admissions &amp; Intake Automation Agent</h3>
+          <p>Turns a manual application pipeline into a reviewed, auditable workflow.</p>
+          <span class="agent-flip-hint">Tap for details ↻</span>
+        </div>
+        <div class="agent-back">
+          <h4>Capabilities</h4>
+          <ul><li>Application &amp; document verification</li><li>AI-generated applicant summaries</li><li>Human approval workflow</li></ul>
+          <h4>Built on</h4>
+          <p>Copilot Studio · Power Platform · Azure AI Foundry · Dataverse</p>
+        </div>
+      </div>
+
+      <div class="agent-card" tabindex="0">
+        <div class="agent-face">
+          <span class="agent-tag">Public Sector</span>
+          <h3>Grant &amp; Eligibility Intake Agent</h3>
+          <p>Validates eligibility and routes cases without a person re-keying every field.</p>
+          <span class="agent-flip-hint">Tap for details ↻</span>
+        </div>
+        <div class="agent-back">
+          <h4>Capabilities</h4>
+          <ul><li>OCR-based data extraction</li><li>Policy &amp; eligibility validation</li><li>Case routing and approval workflow</li></ul>
+          <h4>Built on</h4>
+          <p>AI Builder · Document Intelligence · Power Automate · Copilot Studio</p>
+        </div>
+      </div>
+
+      <div class="agent-card" tabindex="0">
+        <div class="agent-face">
+          <span class="agent-tag">Manufacturing &amp; Finance</span>
+          <h3>ERP Exception Resolution Agent</h3>
+          <p>Catches invoice mismatches and PO exceptions before they hit month-end.</p>
+          <span class="agent-flip-hint">Tap for details ↻</span>
+        </div>
+        <div class="agent-back">
+          <h4>Capabilities</h4>
+          <ul><li>Invoice &amp; PO matching</li><li>Finance reconciliation</li><li>Inventory exception analysis</li></ul>
+          <h4>Built on</h4>
+          <p>Dynamics 365 Business Central · Azure AI · Copilot Studio</p>
+        </div>
+      </div>
+
+      <div class="agent-card" tabindex="0">
+        <div class="agent-face">
+          <span class="agent-tag">Managed Services</span>
+          <h3>MSP Service Desk Agent</h3>
+          <p>Triages incidents and pulls the right knowledge article before a human even opens the ticket.</p>
+          <span class="agent-flip-hint">Tap for details ↻</span>
+        </div>
+        <div class="agent-back">
+          <h4>Capabilities</h4>
+          <ul><li>Incident triage &amp; classification</li><li>Automated ticket routing</li><li>Knowledge base retrieval</li></ul>
+          <h4>Built on</h4>
+          <p>Copilot Studio · Azure AI Search · Power Automate</p>
+        </div>
+      </div>
+
+      <div class="agent-card" tabindex="0">
+        <div class="agent-face">
+          <span class="agent-tag">Enterprise</span>
+          <h3>Cloud Cost Optimization Agent</h3>
+          <p>Reads your Azure subscriptions and tells you what's oversized, idle, or mispriced.</p>
+          <span class="agent-flip-hint">Tap for details ↻</span>
+        </div>
+        <div class="agent-back">
+          <h4>Capabilities</h4>
+          <ul><li>Subscription &amp; spend analysis</li><li>Rightsizing recommendations</li><li>FinOps reporting</li></ul>
+          <h4>Built on</h4>
+          <p>Azure AI · Azure Monitor · Power BI</p>
+        </div>
+      </div>
+
+      <div class="agent-card" tabindex="0">
+        <div class="agent-face">
+          <span class="agent-tag">Enterprise</span>
+          <h3>Tenant Migration Assistant Agent</h3>
+          <p>Plans a Microsoft 365 tenant-to-tenant migration before you touch a single mailbox.</p>
+          <span class="agent-flip-hint">Tap for details ↻</span>
+        </div>
+        <div class="agent-back">
+          <h4>Capabilities</h4>
+          <ul><li>Mailbox &amp; identity mapping</li><li>Migration sequencing</li><li>Risk &amp; rollback planning</li></ul>
+          <h4>Built on</h4>
+          <p>Microsoft Graph · Entra ID · Azure OpenAI</p>
+        </div>
+      </div>
+
+      <div class="agent-card" tabindex="0">
+        <div class="agent-face">
+          <span class="agent-tag">Banking &amp; Government</span>
+          <h3>Security Operations Agent</h3>
+          <p>Correlates alerts across your security stack so analysts triage, not search.</p>
+          <span class="agent-flip-hint">Tap for details ↻</span>
+        </div>
+        <div class="agent-back">
+          <h4>Capabilities</h4>
+          <ul><li>Alert correlation &amp; prioritization</li><li>Incident summarization</li><li>Response playbook suggestions</li></ul>
+          <h4>Built on</h4>
+          <p>Microsoft Defender · Azure Sentinel · Copilot Studio</p>
+        </div>
+      </div>
+
+      <div class="agent-card" tabindex="0">
+        <div class="agent-face">
+          <span class="agent-tag">Cross-industry</span>
+          <h3>Proposal &amp; RFP Response Agent</h3>
+          <p>Drafts the first pass of a technical proposal so your team edits, not starts from zero.</p>
+          <span class="agent-flip-hint">Tap for details ↻</span>
+        </div>
+        <div class="agent-back">
+          <h4>Capabilities</h4>
+          <ul><li>Requirement-to-response mapping</li><li>Draft technical narratives</li><li>Compliance checklist generation</li></ul>
+          <h4>Built on</h4>
+          <p>Azure OpenAI · SharePoint · Microsoft 365</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRAINING -->
+  <section class="training" id="training">
+    <div class="section-head">
+      <p class="eyebrow">Learning &amp; enablement</p>
+      <h2>We don't just build it — we teach your team to run it.</h2>
+      <p class="section-sub">Microsoft Certified Trainer-led programs, delivered on-site and online, worldwide since 2011.</p>
+    </div>
+    <div class="training-grid">
+      <div class="training-card">
+        <h3>Cloud &amp; Infrastructure Training</h3>
+        <p>Azure Administration, Architecture &amp; Design, and core infrastructure fundamentals for IT teams moving to the cloud.</p>
+      </div>
+      <div class="training-card">
+        <h3>Security &amp; Identity Training</h3>
+        <p>Zero Trust concepts, Entra ID, and Microsoft Defender fundamentals for teams taking on security operations.</p>
+      </div>
+      <div class="training-card">
+        <h3>AI &amp; Copilot Enablement</h3>
+        <p>Practical workshops on Azure OpenAI, Copilot Studio, and Power Platform for teams building their first AI solution.</p>
+      </div>
+      <div class="training-card">
+        <h3>Custom Corporate Workshops</h3>
+        <p>Curriculum built around your existing environment and tooling — not a generic slide deck.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- INDUSTRIES -->
   <section class="industries" id="industries">
     <div class="section-head">
@@ -200,41 +391,92 @@
       <div class="industry-card"><h3>Healthcare</h3><p>Regulatory-grade documentation for platforms handling patient data and health authority reviews.</p></div>
       <div class="industry-card"><h3>Banking &amp; Financial Services</h3><p>Cloud and security architecture designed around compliance and audit requirements from day one.</p></div>
       <div class="industry-card"><h3>Government &amp; Public Sector</h3><p>Governance frameworks and security architecture reviews built for public-sector scrutiny.</p></div>
-      <div class="industry-card"><h3>Education</h3><p>Modern workplace and identity modernization for multi-campus, multi-tenant environments.</p></div>
+      <div class="industry-card"><h3>Education</h3><p>Modern workplace, identity modernization, and AI intake agents for multi-campus environments.</p></div>
       <div class="industry-card"><h3>Aviation</h3><p>High-availability, multi-region architecture for operations that can't tolerate downtime.</p></div>
       <div class="industry-card"><h3>Logistics &amp; Supply Chain</h3><p>Vendor, invoice, and supply-chain automation that fits existing ERP and finance workflows.</p></div>
-      <div class="industry-card"><h3>Managed Services Providers</h3><p>Architecture and security reviews that MSPs extend to their own client base.</p></div>
-      <div class="industry-card"><h3>Technology Startups</h3><p>Lean cloud and AI foundations sized for runway, not enterprise budgets.</p></div>
+      <div class="industry-card"><h3>Manufacturing &amp; Industrial</h3><p>Global virtual desktop and infrastructure deployments for distributed plant operations.</p></div>
+      <div class="industry-card"><h3>Managed Services Providers</h3><p>Architecture, security reviews, and AI service-desk agents that MSPs extend to their own clients.</p></div>
       <div class="industry-card"><h3>Enterprise Organizations</h3><p>Large-scale cloud, security, and modern workplace transformation programs.</p></div>
     </div>
   </section>
 
-  <!-- WORK / PROOF -->
+  <!-- WORK / PROOF (filterable) -->
   <section class="work" id="work">
     <div class="section-head">
       <p class="eyebrow">Recent work</p>
       <h2>Selected engagements.</h2>
+      <p class="section-sub">Described by industry and solution — client names withheld under NDA.</p>
     </div>
+
+    <div class="filter-row">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="ai">AI</button>
+      <button class="filter-btn" data-filter="cloud">Cloud</button>
+      <button class="filter-btn" data-filter="security">Security</button>
+      <button class="filter-btn" data-filter="workplace">Modern Workplace</button>
+      <button class="filter-btn" data-filter="training">Training</button>
+    </div>
+
     <div class="work-grid">
-      <article class="work-card">
+      <article class="work-card" data-category="ai">
         <span class="work-tag">AI &amp; Automation · Logistics</span>
         <h3>Vendor invoice automation for a supply-chain business</h3>
-        <p>Replaced manual invoice entry with an AI Builder + Power Automate pipeline — extraction, standardization, and document routing, with no added cloud infrastructure cost.</p>
+        <p>AI Builder and Power Automate pipeline for invoice extraction, standardization, and document routing — no added cloud infrastructure cost.</p>
       </article>
-      <article class="work-card">
-        <span class="work-tag">Cybersecurity &amp; Compliance · Healthcare</span>
+      <article class="work-card" data-category="ai">
+        <span class="work-tag">AI &amp; Automation · Government</span>
+        <h3>Generative AI "chat with your data" assistant</h3>
+        <p>Azure OpenAI-based chatbot and GenAI landing zone for a large urban development program, answering questions directly from operational data.</p>
+      </article>
+      <article class="work-card" data-category="ai">
+        <span class="work-tag">AI &amp; Automation · Banking</span>
+        <h3>Azure OpenAI integrated into the software development lifecycle</h3>
+        <p>Embedded generative AI into an existing SDLC process to speed up documentation and code review support.</p>
+      </article>
+      <article class="work-card" data-category="ai">
+        <span class="work-tag">AI &amp; Automation · Aviation</span>
+        <h3>Sentiment &amp; topic analysis for customer feedback</h3>
+        <p>AI-driven analysis of customer feedback across food and beverage service touchpoints for an airline.</p>
+      </article>
+      <article class="work-card" data-category="cloud">
+        <span class="work-tag">Cloud · Manufacturing</span>
+        <h3>Global Azure Virtual Desktop deployment</h3>
+        <p>Multi-region AVD rollout for a large industrial organization's distributed workforce.</p>
+      </article>
+      <article class="work-card" data-category="cloud">
+        <span class="work-tag">Cloud · Aviation</span>
+        <h3>On-premises to Azure data pipeline migration</h3>
+        <p>Migrated SSIS-based data integration to Azure Data Factory for an airport operations authority.</p>
+      </article>
+      <article class="work-card" data-category="cloud">
+        <span class="work-tag">Cloud · Healthcare</span>
+        <h3>Cloud migration business case &amp; execution</h3>
+        <p>Built the business case and led the technical migration for a hospital system moving core workloads to the cloud.</p>
+      </article>
+      <article class="work-card" data-category="security">
+        <span class="work-tag">Security &amp; Compliance · Healthcare</span>
         <h3>Security compliance documentation for a national health platform</h3>
         <p>Authored the formal security compliance package supporting an EMR platform's national health authority enrollment.</p>
       </article>
-      <article class="work-card">
+      <article class="work-card" data-category="security">
+        <span class="work-tag">Security · Logistics</span>
+        <h3>High-availability firewall migration</h3>
+        <p>Migrated and clustered firewall infrastructure for continuity during a network security transition.</p>
+      </article>
+      <article class="work-card" data-category="workplace">
         <span class="work-tag">Modern Workplace · Enterprise</span>
         <h3>Tenant-to-tenant Microsoft 365 migration</h3>
-        <p>Planned and delivered an Exchange Online and Entra ID migration for an enterprise organization consolidating multiple tenants into one.</p>
+        <p>Planned and delivered an Exchange Online and Entra ID migration consolidating multiple tenants into one.</p>
       </article>
-      <article class="work-card">
-        <span class="work-tag">Managed Services · Enterprise IT</span>
-        <h3>ERP service management transition</h3>
-        <p>Defined infrastructure scope, RACI, security boundaries, and credential handover for an enterprise ERP environment moving to new operational ownership.</p>
+      <article class="work-card" data-category="workplace">
+        <span class="work-tag">Managed Services · Education</span>
+        <h3>ServiceNow implementation &amp; managed support</h3>
+        <p>Implemented ServiceNow and provided ongoing managed services for an educational institution's IT operations.</p>
+      </article>
+      <article class="work-card" data-category="training">
+        <span class="work-tag">Training · Global</span>
+        <h3>Microsoft Certified Trainer-led Azure programs</h3>
+        <p>Delivered Azure Administration and infrastructure training on-site and online across banking, government, and enterprise clients since 2011.</p>
       </article>
     </div>
     <p class="work-note">Client names withheld under NDA — described by industry and solution only. References available on request.</p>
@@ -245,7 +487,7 @@
     <div class="contact-inner">
       <p class="eyebrow">Start a project</p>
       <h2>Tell us what's not moving fast enough.</h2>
-      <p class="contact-sub">One conversation, no obligation — whether it's cloud, AI, security, or all three, we'll tell you honestly what's actually needed.</p>
+      <p class="contact-sub">One conversation, no obligation — whether it's cloud, AI, security, or training, we'll tell you honestly what's actually needed.</p>
       <div class="contact-actions">
         <a href="mailto:hello@metanous.org" class="btn btn-primary">hello@metanous.org</a>
       </div>
@@ -259,7 +501,8 @@
   <div class="footer-inner">
     <span>© <span id="year"></span> Metanous. All rights reserved.</span>
     <span class="footer-links">
-      <a href="#services">Services</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#agents">AI Agents</a>
       <a href="#work">Work</a>
       <a href="#contact">Contact</a>
     </span>
